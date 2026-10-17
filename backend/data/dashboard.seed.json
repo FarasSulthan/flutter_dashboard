@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "name": "Farasha Dashboard API",
+    "version": 1
+  },
+  "dashboard": {
+    "metrics": [
+      {"key": "revenue", "label": "Total Pendapatan", "value": 24800000, "displayValue": "Rp 24,8 jt", "change": "+12,5%"},
+      {"key": "newOrders", "label": "Pesanan Baru", "value": 1248, "displayValue": "1.248", "change": "+8,2%"},
+      {"key": "customers", "label": "Pelanggan", "value": 856, "displayValue": "856", "change": "+5,4%"},
+      {"key": "activeProducts", "label": "Produk Aktif", "value": 136, "displayValue": "136", "change": "+2,1%"}
+    ],
+    "sales": [
+      {"label": "Sen", "revenue": 3000000},
+      {"label": "Sel", "revenue": 5400000},
+      {"label": "Rab", "revenue": 4100000},
+      {"label": "Kam", "revenue": 7000000},
+      {"label": "Jum", "revenue": 5800000},
+      {"label": "Sab", "revenue": 8600000},
+      {"label": "Min", "revenue": 7600000}
+    ],
+    "recentTransactions": [
+      {"id": "ORD-2084", "customer": "Nadia Putri", "date": "12 Jun 2026", "amount": 1250000, "paymentStatus": "paid"},
+      {"id": "ORD-2083", "customer": "Dimas Pratama", "date": "12 Jun 2026", "amount": 680000, "paymentStatus": "paid"},
+      {"id": "ORD-2082", "customer": "Rani Wulandari", "date": "11 Jun 2026", "amount": 425000, "paymentStatus": "processing"},
+      {"id": "ORD-2081", "customer": "Bima Saputra", "date": "11 Jun 2026", "amount": 960000, "paymentStatus": "paid"},
+      {"id": "ORD-2080", "customer": "Siti Rahma", "date": "10 Jun 2026", "amount": 315000, "paymentStatus": "processing"}
+    ]
+  },
+  "products": [
+    {"id": "PRD-101", "name": "Jaket Neobrutal Yellow", "category": "Pakaian", "price": 350000, "stock": 45, "status": "tersedia"},
+    {"id": "PRD-102", "name": "Sepatu Retro Neon Blue", "category": "Sepatu", "price": 1250000, "stock": 8, "status": "menipis"},
+    {"id": "PRD-103", "name": "Topi Snapback Bold", "category": "Aksesoris", "price": 180000, "stock": 120, "status": "tersedia"},
+    {"id": "PRD-104", "name": "Hoodie Oversized Mint", "category": "Pakaian", "price": 650000, "stock": 3, "status": "menipis"},
+    {"id": "PRD-105", "name": "Smartwatch Cyber Sport", "category": "Elektronik", "price": 2100000, "stock": 0, "status": "habis"},
+    {"id": "PRD-106", "name": "Tote Bag Canvas Bold", "category": "Aksesoris", "price": 160000, "stock": 85, "status": "tersedia"}
+  ],
+  "customers": [
+    {"id": "CUST-001", "name": "Budi Santoso", "email": "budi.santoso@gmail.com", "phone": "+62 812-3456-7890", "tier": "vip", "totalSpend": 14500000, "totalOrders": 28, "joinDate": "12 Jan 2025"},
+    {"id": "CUST-002", "name": "Siti Rahma", "email": "siti.rahma@yahoo.com", "phone": "+62 857-1234-5678", "tier": "reguler", "totalSpend": 5200000, "totalOrders": 11, "joinDate": "05 Mar 2025"},
+    {"id": "CUST-003", "name": "Andi Pratama", "email": "andi.p@gmail.com", "phone": "+62 878-9012-3456", "tier": "baru", "totalSpend": 780000, "totalOrders": 2, "joinDate": "15 Jul 2026"},
+    {"id": "CUST-004", "name": "Dewi Lestari", "email": "dewi.l@outlook.com", "phone": "+62 813-8899-7766", "tier": "vip", "totalSpend": 21800000, "totalOrders": 42, "joinDate": "20 Nov 2024"},
+    {"id": "CUST-005", "name": "Rian Hidayat", "email": "rian.hd@gmail.com", "phone": "+62 821-4455-6677", "tier": "reguler", "totalSpend": 3400000, "totalOrders": 7, "joinDate": "02 Feb 2026"},
+    {"id": "CUST-006", "name": "Nadia Putri", "email": "nadia.putri@gmail.com", "phone": "+62 896-1122-3344", "tier": "vip", "totalSpend": 18900000, "totalOrders": 35, "joinDate": "10 Aug 2024"}
+  ],
+  "orders": [
+    {"id": "ORD-8821", "customerName": "Budi Santoso", "date": "23 Jul 2026, 14:32", "totalAmount": 450000, "status": "selesai", "paymentMethod": "QRIS", "items": [{"name": "Jaket Neobrutal Yellow", "quantity": 1, "price": 350000}, {"name": "Sticker Pack Farasha", "quantity": 2, "price": 50000}]},
+    {"id": "ORD-8822", "customerName": "Siti Rahma", "date": "23 Jul 2026, 15:10", "totalAmount": 1250000, "status": "diproses", "paymentMethod": "Transfer Bank", "items": [{"name": "Sepatu Retro Neon Blue", "quantity": 1, "price": 1250000}]},
+    {"id": "ORD-8823", "customerName": "Andi Pratama", "date": "23 Jul 2026, 16:05", "totalAmount": 180000, "status": "pending", "paymentMethod": "E-Wallet", "items": [{"name": "Topi Snapback Bold Black", "quantity": 1, "price": 180000}]},
+    {"id": "ORD-8824", "customerName": "Dewi Lestari", "date": "22 Jul 2026, 11:20", "totalAmount": 890000, "status": "selesai", "paymentMethod": "Kartu Kredit", "items": [{"name": "Hoodie Oversized Mint", "quantity": 1, "price": 650000}, {"name": "Kaos Graphic Bold", "quantity": 1, "price": 240000}]},
+    {"id": "ORD-8825", "customerName": "Rian Hidayat", "date": "22 Jul 2026, 09:15", "totalAmount": 320000, "status": "dibatalkan", "paymentMethod": "QRIS", "items": [{"name": "Tas Tote Bag Canvas", "quantity": 2, "price": 160000}]},
+    {"id": "ORD-8826", "customerName": "Nadia Putri", "date": "21 Jul 2026, 18:40", "totalAmount": 2100000, "status": "selesai", "paymentMethod": "Transfer Bank", "items": [{"name": "Smartwatch Cyber Sport", "quantity": 1, "price": 2100000}]}
+  ],
+  "reports": {
+    "Hari Ini": {"labels": ["08:00", "10:00", "12:00", "14:00", "16:00", "18:00"], "values": [1.2, 2.5, 1.8, 3.2, 2.9, 4.1]},
+    "Minggu Ini": {"labels": ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"], "values": [12.5, 18.2, 14.8, 22.1, 19.5, 24.8, 28.3]},
+    "Bulan Ini": {"labels": ["Mgg 1", "Mgg 2", "Mgg 3", "Mgg 4"], "values": [65.4, 78.2, 85.0, 92.4]},
+    "Tahun Ini": {"labels": ["Q1", "Q2", "Q3", "Q4"], "values": [120.0, 145.5, 180.2, 210.0]}
+  },
+  "settings": {
+    "storeName": "Farasha Store Jakarta",
+    "email": "admin@farashastore.com",
+    "phone": "+62 812-9988-7766",
+    "taxRate": "11%",
+    "currency": "IDR",
+    "notifications": {"emailAlerts": true, "smsAlerts": false, "stockAlerts": true},
+    "twoFactorEnabled": false
+  }
+}
